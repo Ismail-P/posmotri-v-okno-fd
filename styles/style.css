@@ -51,7 +51,7 @@ ol {
   /* мой код */
   display: flex;
   align-items: center;
-  padding: 133px 30px;
+  padding: 0 30px;
 }
 
 /* мой код */
@@ -59,7 +59,6 @@ ol {
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 30px;
-  align-items: end;
   justify-content: end;
   width: 1140px;
 }
@@ -100,7 +99,6 @@ ol {
 .search-form {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
   column-gap: 40px;
   margin-bottom: 5px;
 }
@@ -171,7 +169,6 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox::after {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  cursor: pointer;
 }
 
 .search-form__textfield::placeholder {
@@ -236,6 +233,7 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox::after {
 }
 
 .search-form__submit-button {
+  align-self: end;
   width: 194px;
   height: 34px;
 }
@@ -273,6 +271,10 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox::after {
   padding: 0 3px;
 }
 
+.content__list-item:first-child {
+  margin-top: 3px;
+}
+
 .content__card-link {
   display: block;
 }
@@ -306,7 +308,7 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox::after {
 
 .content__video-card-thumbnail {
   width: 197px;
-  height: 98px;
+  height: 103px;
   object-fit: cover;
   object-position: center;
 }
@@ -326,6 +328,7 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox::after {
   overflow: hidden;
   text-overflow: ellipsis;
   max-width: 190px;
+  margin-bottom: 6px;
 }
 
 .content__video-card-description {
@@ -345,7 +348,7 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox::after {
 }
 
 .more-button {
-  margin-top: 30px;
+  margin: 30px 0 3px 3px;
   width: 99%;
   height: 11%;
 }
